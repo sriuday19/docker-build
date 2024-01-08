@@ -3,9 +3,12 @@ pipeline{
     
     stages {
         stage('build image') {
-            script {
+            steps {
+                script {
                 docker_image = docker.build("sriuday19/vprofileapp:${env.BUILD_NUMBER}", "./Dockerfiles/app/")
             }
+            }
+            
         }
     }
 }
