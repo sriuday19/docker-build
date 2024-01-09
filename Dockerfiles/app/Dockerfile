@@ -1,4 +1,4 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
-ADD ../../ vprofile
+ADD . vprofile
 RUN cd vprofile && ls -l
