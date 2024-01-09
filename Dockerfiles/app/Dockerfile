@@ -1,5 +1,5 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
-ADD ../ /vprofile-app
-RUN cd vprofile-app
-RUN ls 
+WORKDIR /vprofile-app
+COPY ../../ /vprofile-app
+RUN ls
