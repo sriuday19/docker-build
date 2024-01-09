@@ -1,3 +1,3 @@
 FROM openjdk:11
-ADD ../../ vprofile
+ADD ../../../ vprofile
 RUN cd vprofile && ls -l
