@@ -1,4 +1,4 @@
 FROM openjdk:11
 RUN apt update && apt install maven -y
-ADD /../../ vprofile-project
-RUN cd vprofile-project && mvn install
+RUN git clone https://github.com/sriuday19/vprofile-ci.git
+RUN cd vprofile-ci && mvn install
