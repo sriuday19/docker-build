@@ -1,4 +1,3 @@
-FROM openjdk:11 AS BUILD_IMAGE
-RUN apt update && apt install maven -y
-COPY docker-build-test vprofile
+FROM openjdk:11
+ADD ../../ vprofile
 RUN cd vprofile && ls -l
