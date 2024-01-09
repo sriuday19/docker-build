@@ -1,4 +1,4 @@
 FROM openjdk:11
-WORKDIR /vprofile
-ADD ../../ vprofile
-RUN cd vprofile && ls
+RUN apt update -y
+ADD ../../ vprofile-project
+RUN cd vprofile-project && ls
